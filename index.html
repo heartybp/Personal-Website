@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="icon-container">
+        <div class="icon">
+            <img src="images/about.png" alt="About Icon" class="popup-icon" data-popup="about-popup">
+            <p>About Me</p>
+        </div>
+        
+        <div class="icon">
+            <img src="images/projects.png" alt="Projects Icon" class="popup-icon" data-popup="projects-popup">
+            <p>Projects</p>
+        </div>
+
+        <div class="icon">
+            <img src="images/contact.png" alt="Contact Icon" class="popup-icon" data-popup="contact-popup">
+            <p>Contact</p>
+        </div>
+    </div>
+
+    <div class="popup" id="about-popup">
+        <div class="header">
+            <button class="close-button">&times;</button>
+        </div>
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hi, I'm Hearty! I'm currently studying computer science at UC Irvine. I'm an aspiring full-stack software engineer. In my free time, I enjoy reading, rollerskating, and watching Netflix.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="projects-popup">
+        <div class="header">
+            <button class="close-button">&times;</button>
+        </div>
+        <div class="content">
+            <h2>My Projects</h2>
+                <p></p>
+                <a href="https://github.com/heartybp/SpotLyric">Spotlyric</a> <br>
+                <em>Python, Flask, Spotify API</em> <br>
+                
+                <p>
+                    Web application that allows users to find information on their favorite songs
+                    <ul>
+                        <li>Implemented Spotify API & Spotipy library to retrieve available songs on the Spotify platform and track details</li>
+                        <li>Utilized LyricsGenius API to retrieve song lyrics based on track information</li>
+                    </ul>
+                </p>
+
+                <a href="https://github.com/heartybp/Gutenberg-Scraper">Gutenberg Scraper</a> <br>
+                <em>Python, Tkinter, Beautiful Soup</em> <br>
+
+                <p>
+                    Python program that utilizes web scraping to obtain matching book titles on Project Gutenberg
+                    <ul>
+                        <li>Employed a graphical user interface with Tkinter for users to input search queries and display results</li>
+                        <li>Used HTTP GET request to fetch HTML content from Project Gutenberg site</li>
+                        <li>Applied BeautifulSoup to parse and extract book title data from HTML structure</li>
+                    </ul>
+                </p>
+        </div>
+    </div>
+
+    <div class="popup" id="contact-popup">
+        <div class="header">
+            <button class="close-button">&times;</button>
+        </div>
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p>
+                <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/hearty-parrenas/">LinkedIn</a>
+                <i class="fa-brands fa-github"></i> <a href="https://github.com/heartybp">Github</a>
+                <br>
+                <i class="fa-regular fa-envelope"></i> Email: hparrena@uci.edu
+            </p>
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <div class="start-button">
+            <img src="images\windows-start.png" alt="start-button" width="95px">
+        </div>
+        <div class="task-container">
+            <br>
+            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
